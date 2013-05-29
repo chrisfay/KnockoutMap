@@ -5,6 +5,7 @@
 	<title>Knockout Testing</title>
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
 </head>
 <body>
 	<div id="wrapper">
@@ -15,7 +16,7 @@
 
 		<div id="map-container">
 			<p>The map</p>
-			<div id="map"></div>
+			<div id="map" data-bind="leafletMap: $data"></div>
 		</div>
 		
 		<footer>
@@ -24,11 +25,12 @@
 
 	</div>
 
-	<!-- Load All Scripts -->
+	<!-- Load All Scripts -->	
+	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
-	 <script src="js/libs/koExternalTemplateEngine_all.js"></script>
-    <script src="js/libs/knockout.mapping.js"></script>
-	<script src="js/app/app.js"></script>
+  <script src="js/libs/koExternalTemplateEngine_all.js"></script>
+  <script src="js/libs/knockout.mapping.js"></script>  
+	<script src="js/app/app.js"></script>	
 </body>
 </html>
